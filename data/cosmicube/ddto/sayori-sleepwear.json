@@ -1,0 +1,18 @@
+{
+	"type": "sayoriSkin",
+	"price": 250,
+	
+	"title": "Sleepwear Sayori",
+	"description": "Chud",
+	"hint": "Unlocked by receiving a rank of A or higher on Joyride.",
+
+	"node": {
+		"direction": "north",
+		"parent": "sayori-casual"
+	},
+	"color": [
+		149,
+		224,
+		250
+	]
+}

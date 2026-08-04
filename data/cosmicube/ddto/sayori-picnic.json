@@ -1,0 +1,18 @@
+{
+	"type": "sayoriSkin",
+	"price": 250,
+	
+	"title": "Picnic Sayori",
+	"description": "Chud",
+	"hint": "Unlocked by Default.\nI'm doing this later",
+
+	"node": {
+		"direction": "north",
+		"parent": "sayori-sleepwear"
+	},
+	"color": [
+		149,
+		224,
+		250
+	]
+}

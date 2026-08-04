@@ -1,0 +1,18 @@
+{
+	"type": "sayoriSkin",
+	"price": 250,
+	
+	"title": "Zipper Sayori",
+	"description": "Chud",
+	"hint": "Unlocked by receiving a rank of A or higher on Constricted.",
+
+	"node": {
+		"direction": "north",
+		"parent": "sayori-grace"
+	},
+	"color": [
+		149,
+		224,
+		250
+	]
+}

@@ -1,0 +1,140 @@
+{
+	"pausePortrait": "",
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "BF Left Miss"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "BF Up Miss"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "BFLeft"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "BFRight"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "BF Down Miss"
+		},
+		{
+			"offsets": [
+				-4,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "BF Right Miss"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "BFDown"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "BFIdle"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "BFUp"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "hey",
+			"fps": 24,
+			"name": "BFHey",
+			"indices": []
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/bfPixelNew",
+	"position": [
+		100,
+		475
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": {},
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "bf-pixel",
+	"afterimages": true,
+	"gameover_character": "bf-pixel-dead",
+	"vslice_sustains": false,
+	"flip_x": true,
+	"healthbar_colour": -8661258,
+	"camera_position": [
+		0,
+		0
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 4,
+	"scale": 6,
+	"_editor_isPlayer": true
+}

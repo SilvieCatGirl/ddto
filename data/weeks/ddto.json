@@ -1,0 +1,62 @@
+{
+	"storyName": "yea",
+	"hideFreeplay": false,
+	"weekBackground": "yea",
+	"difficulties": "Normal",
+	"weekBefore": "",
+	"startUnlocked": true,
+	"section": "ddto",
+	"weekCharacters": [
+		"",
+		"bf",
+		""
+	],
+	"songs": [
+		[
+			"high school conflict",
+			"monika-pixelnew",
+			[
+				49,
+				176,
+				209
+			],
+			"monika",
+			"GGalactigal"
+		],
+		[
+			"bara no yume",
+			"duet",
+			[
+				49,
+				176,
+				209
+			],
+			"monika",
+			"JACKALRUIN"
+		],
+		[
+			"rain clouds",
+			"sayori",
+			[
+				49,
+				176,
+				209
+			],
+			"sayori",
+			"Stardust Tunes"
+		],
+		[
+			"my confession",
+			"sayori",
+			[
+				49,
+				176,
+				209
+			],
+			"sayori",
+			"Sprunkle"
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "yea"
+}
