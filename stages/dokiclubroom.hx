@@ -71,6 +71,11 @@ function onCreatePost(){
 			add(yuri);
 			yuri.x = sayori.x;
 		}
+		if (PlayState.SONG.player2 == "natsuki"){
+			add(sayori);
+			add(yuri);
+			yuri.x = natsuki.x;
+		}
 		camSpecialThing([475, 400], [850, 500], 0.75);
 }
 
