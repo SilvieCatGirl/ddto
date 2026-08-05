@@ -11,4 +11,11 @@ function onCreatePost()
 	
 	if (PlayState.SONG.player2 == "sayori" && sayoriSkin != null) changeCharacter(sayoriSkin, 1);
 	if (PlayState.SONG.player2 == "natsuki" && natsukiSkin != null) changeCharacter(natsukiSkin, 1);
+	if (PlayState.SONG.player2 == "yuri" && yuriSkin != null) changeCharacter(yuriSkin, 1);
+}
+
+function onUpdate()
+{
+	var yuriSkin:Null<String> = ClientPrefs.equipment.get('yuriSkin');
+	if (dad.curCharacter == "yuri-crazy" && yuriSkin != null) changeCharacter(yuriSkin + "-crazy", 1);
 }

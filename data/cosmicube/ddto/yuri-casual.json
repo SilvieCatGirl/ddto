@@ -1,0 +1,18 @@
+{
+	"type": "yuriSkin",
+	"price": 250,
+	
+	"title": "Casual Yuri",
+	"description": "Chud",
+	"hint": "Unlocked by Default.",
+
+	"node": {
+		"direction": "east",
+		"parent": "root"
+	},
+	"color": [
+		158,
+		114,
+		210
+	]
+}

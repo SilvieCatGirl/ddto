@@ -76,6 +76,10 @@ function onCreatePost(){
 			add(yuri);
 			yuri.x = natsuki.x;
 		}
+		if (PlayState.SONG.song == "Deep Breaths"){
+			add(sayori);
+			add(natsuki);
+		}
 		camSpecialThing([475, 400], [850, 500], 0.75);
 }
 

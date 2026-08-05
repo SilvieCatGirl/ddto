@@ -13,7 +13,7 @@
 	"camera_center": [0, 0],
 	"camera_speed": 1,
 
-    "dadZIndex": 300,
+    "dadZIndex": 199,
     "bfZIndex": 200,
     "gfZIndex": 100,
     "petZIndex": 201

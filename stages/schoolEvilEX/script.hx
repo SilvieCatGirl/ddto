@@ -31,7 +31,7 @@ function onLoad()
 	fg.alpha = 0.000001;
 	add(fg);
 		
-	medbay = new FunkinSprite(802, 575).loadAtlas('characters/freeplay/medbay');
+	medbay = new FunkinSprite(752, 575).loadAtlas('characters/freeplay/medbay');
 	medbay.addAnimByPrefix('idle', 'medbay', 24, false);
 	medbay.playAnim('idle');
 	medbay.antialiasing = false;

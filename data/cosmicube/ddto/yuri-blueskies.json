@@ -1,0 +1,18 @@
+{
+	"type": "yuriSkin",
+	"price": 250,
+	
+	"title": "Blue Skies Yuri",
+	"description": "Chud",
+	"hint": "Unlocked by Default.",
+
+	"node": {
+		"direction": "east",
+		"parent": "yuri-tabi"
+	},
+	"color": [
+		158,
+		114,
+		210
+	]
+}

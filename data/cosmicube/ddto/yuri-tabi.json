@@ -1,0 +1,18 @@
+{
+	"type": "yuriSkin",
+	"price": 250,
+	
+	"title": "Friends Yuri",
+	"description": "Chud",
+	"hint": "Unlocked by Default.",
+
+	"node": {
+		"direction": "east",
+		"parent": "yuri-taki"
+	},
+	"color": [
+		158,
+		114,
+		210
+	]
+}
