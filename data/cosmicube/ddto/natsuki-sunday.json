@@ -8,7 +8,7 @@
 
 	"node": {
 		"direction": "west",
-		"parent": "natsuki-festival"
+		"parent": "natsuki-kapi"
 	},
 	"color": [
 		252,
