@@ -1,5 +1,5 @@
 import funkin.Mods;
-if (Mods.currentModDirectory != 'ddto') return;
+if (Mods.currentModDirectory != 'ddto-main') return;
 
 function onCreatePost()
 {

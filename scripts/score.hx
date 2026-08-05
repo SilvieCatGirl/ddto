@@ -2,7 +2,7 @@ import funkin.Mods;
 import funkin.game.huds.PsychHUD;
 import flixel.util.FlxStringUtil;
 import openfl.media.Sound;
-if (Mods.currentModDirectory != 'ddto') return;
+if (Mods.currentModDirectory != 'ddto-main') return;
 
 function onCreatePost(){
 	timeBar.setColors(dad.healthColour, 0xFF000000);
