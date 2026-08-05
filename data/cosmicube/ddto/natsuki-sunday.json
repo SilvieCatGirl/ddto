@@ -1,0 +1,18 @@
+{
+	"type": "natsukiSkin",
+	"price": 250,
+	
+	"title": "Sunday Natsuki",
+	"description": "Chud",
+	"hint": "Unlocked by Default.",
+
+	"node": {
+		"direction": "west",
+		"parent": "natsuki-festival"
+	},
+	"color": [
+		252,
+		149,
+		211
+	]
+}

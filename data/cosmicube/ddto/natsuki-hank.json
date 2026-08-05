@@ -1,0 +1,18 @@
+{
+	"type": "natsukiSkin",
+	"price": 250,
+	
+	"title": "Antipathy Natsuki",
+	"description": "Chud",
+	"hint": "Unlocked by Default.",
+
+	"node": {
+		"direction": "west",
+		"parent": "natsuki-sunday"
+	},
+	"color": [
+		252,
+		149,
+		211
+	]
+}
