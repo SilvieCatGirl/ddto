@@ -1,0 +1,18 @@
+{
+	"type": "monikaSkin",
+	"price": 250,
+	
+	"title": "Friends Monika",
+	"description": "Chud",
+	"hint": "Unlocked by Default.",
+
+	"node": {
+		"direction": "south",
+		"parent": "monika-hex"
+	},
+	"color": [
+		140,
+		212,
+		101
+	]
+}

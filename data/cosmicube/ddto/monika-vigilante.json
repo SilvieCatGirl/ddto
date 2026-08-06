@@ -1,0 +1,18 @@
+{
+	"type": "monikaSkin",
+	"price": 250,
+	
+	"title": "Vigilante Monika",
+	"description": "Chud",
+	"hint": "Unlocked by Default.",
+
+	"node": {
+		"direction": "south",
+		"parent": "monika-blueskies"
+	},
+	"color": [
+		140,
+		212,
+		101
+	]
+}

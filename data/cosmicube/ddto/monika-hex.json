@@ -1,0 +1,18 @@
+{
+	"type": "monikaSkin",
+	"price": 250,
+	
+	"title": "Festival Monika",
+	"description": "Chud",
+	"hint": "Unlocked by Default.",
+
+	"node": {
+		"direction": "south",
+		"parent": "monika-valentine"
+	},
+	"color": [
+		140,
+		212,
+		101
+	]
+}

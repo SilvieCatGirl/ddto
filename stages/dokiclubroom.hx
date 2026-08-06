@@ -80,6 +80,13 @@ function onCreatePost(){
 			add(sayori);
 			add(natsuki);
 		}
+		if (PlayState.SONG.player2 == "monika"){
+			add(sayori);
+			add(yuri);
+			add(natsuki);
+			yuri.x = natsuki.x;
+			natsuki.x = 1247;
+		}
 		camSpecialThing([475, 400], [850, 500], 0.75);
 }
 
@@ -88,4 +95,10 @@ function onBeatHit(){
 		sayori.animation.play('idle');
 		natsuki.animation.play('idle');
 		yuri.animation.play('idle');
+}
+
+function onSongStart(){
+		if (dad.curCharacter == "sayori-minus"){
+			camSpecialThing([475, 500], [850, 500], 0.75);
+		}
 }

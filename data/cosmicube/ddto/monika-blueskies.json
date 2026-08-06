@@ -1,0 +1,18 @@
+{
+	"type": "monikaSkin",
+	"price": 250,
+	
+	"title": "Blue Skies Monika",
+	"description": "Chud",
+	"hint": "Unlocked by Default.",
+
+	"node": {
+		"direction": "south",
+		"parent": "monika-senpai"
+	},
+	"color": [
+		140,
+		212,
+		101
+	]
+}

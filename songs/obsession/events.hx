@@ -37,6 +37,7 @@ function onLoad()
 			-FlxG.height * FlxG.camera.zoom).makeGraphic(FlxG.width * 3, FlxG.height * 3, FlxColor.BLACK);
 		blackScreenBG.alpha = 0.0001;
 		blackScreenBG.scrollFactor.set();
+		add(blackScreenBG);
 
 		blackScreentwo = new FlxSprite(-FlxG.width * FlxG.camera.zoom,
 			-FlxG.height * FlxG.camera.zoom).makeGraphic(FlxG.width * 3, FlxG.height * 3, FlxColor.BLACK);
@@ -87,7 +88,6 @@ function onStepHit()
 }
 
 function onEndSong(){
-	Sys.exit(0);
 }
 
 	function yuriGoCrazy()
@@ -95,13 +95,13 @@ function onEndSong(){
 		// yooo she gon da crazyy
 
 		// visual setup
-		defaultCamZoom = 1.4;
+		camSpecialThing([475, 475], [850, 500], 1.4);
 		camZooming = true;
 		camFocus = false;
 		blackScreenBG.alpha = 0.8;
 
 		// character setup
-		gf.playAnim('necksnap', true);
+		game.gf.playAnim('necksnap', true);
 		boyfriend.x = dad.x + 250;
 
 		// vignette + camera setup

@@ -2,13 +2,13 @@
 	"type": "sayoriSkin",
 	"price": 250,
 	
-	"title": "Blue Skies Sayori",
+	"title": "Minus Sayori",
 	"description": "Chud",
-	"hint": "Unlocked by receiving a rank of A or higher on My Confession.",
+	"hint": "Unlocked by receiving a rank of A or higher on Constricted.",
 
 	"node": {
 		"direction": "north",
-		"parent": "sayori-minus"
+		"parent": "sayori-zipper"
 	},
 	"color": [
 		149,

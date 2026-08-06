@@ -1,0 +1,18 @@
+{
+	"type": "monikaSkin",
+	"price": 250,
+	
+	"title": "Valentine Monika",
+	"description": "Chud",
+	"hint": "Unlocked by Default.",
+
+	"node": {
+		"direction": "south",
+		"parent": "monika-casual"
+	},
+	"color": [
+		140,
+		212,
+		101
+	]
+}

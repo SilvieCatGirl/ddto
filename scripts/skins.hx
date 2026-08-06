@@ -12,6 +12,7 @@ function onCreatePost()
 	if (PlayState.SONG.player2 == "sayori" && sayoriSkin != null) changeCharacter(sayoriSkin, 1);
 	if (PlayState.SONG.player2 == "natsuki" && natsukiSkin != null) changeCharacter(natsukiSkin, 1);
 	if (PlayState.SONG.player2 == "yuri" && yuriSkin != null) changeCharacter(yuriSkin, 1);
+	if (PlayState.SONG.player2 == "monika" && monikaSkin != null) changeCharacter(monikaSkin, 1);
 }
 
 function onUpdate()

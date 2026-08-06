@@ -8,12 +8,15 @@ function setupNote(note)
 	if (PlayState.isPixelStage){
 	note.setCustomColor([0xFF101010, 0xFFFF0000, 0xFF990022]);
 	}
+        note.noAnimation = true;
+	if (PlayState.SONG.song == "Obsession"){
+        note.noAnimation = false;
+	}
         note.ignoreNote = false;
         note.canMiss = true;
         note.hitPriority = 0;
 	note.rgbEnabled = false;
         note.hitCausesMiss = true;
-        note.noAnimation = true;
         note.missHealth = 5;
     }
 }
