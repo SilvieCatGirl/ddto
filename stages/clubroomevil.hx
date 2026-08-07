@@ -46,6 +46,7 @@ function onLoad()
 					popup.animation.play('idle', true);
 					popup.scrollFactor.set(1, 1);
 					popup.alpha = 0.001;
+					add(popup);
 }
 
 function onCreatePost()
