@@ -29,6 +29,7 @@ function onLoad()
 					staticshock.setGraphicSize(Std.int(FlxG.width / defaultCamZoom));
 					staticshock.updateHitbox();
 					staticshock.screenCenter();
+					staticshock.blend = BlendMode.COLORDODGE;
 					staticshock.cameras = [camHUD];
 					staticshock.alpha = 0.001;
 					add(staticshock);
@@ -54,9 +55,9 @@ function onStepHit()
 						switch (curStep)
 						{
 							case 432 | 448 | 464:
-									songSpeed -= 0.05;
+									PlayState.SONG.scrollSpeed -= 0.05;
 							case 480:
-									songSpeed -= 0.05;
+									PlayState.SONG.scrollSpeed -= 0.05;
 
 								FlxTween.tween(FlxG.camera, {zoom: 1.5}, (Conductor.stepCrotchet / 14), {ease: FlxEase.linear});
 								{
@@ -110,6 +111,4 @@ function onEndSong(){
 			add(vignette);
 			vignette.alpha = 0.6;
 		}
-
-		camFollow.setPosition((dad.getMidpoint().x + boyfriend.getMidpoint().x) / 1.8, dad.getMidpoint().y - 50);
 	}

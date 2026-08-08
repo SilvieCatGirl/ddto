@@ -37,5 +37,11 @@ function onUpdate(){
 			timeTxt.y = 682;
 		}
 	}
-	timeTxt.text = PlayState.SONG.song + " (" + FlxStringUtil.formatTime(Math.floor(songCalc / 1000), false) + ")";
+	if (game.playbackRate != "1")
+	{
+		timeTxt.text = PlayState.SONG.song + " (" + game.playbackRate + "x)" + " (" + FlxStringUtil.formatTime(Math.floor(songCalc / 1000), false) + ")";
+	}
+	else{
+		timeTxt.text = PlayState.SONG.song + " (" + FlxStringUtil.formatTime(Math.floor(songCalc / 1000), false) + ")";
+	}
 }

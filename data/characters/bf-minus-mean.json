@@ -159,7 +159,7 @@
 	"image": "characters/boyfriend/MINUSBOYFRIEND_3",
 	"position": [
 		-25,
-		25
+		325
 	],
 	"healthicon": "bf-minus-mean",
 	"flip_x": true,

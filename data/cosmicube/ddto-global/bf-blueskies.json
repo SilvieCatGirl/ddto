@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+	
+	"title": "Blue Skies Boyfriend",
+	"description": "Chud",
+	"hint": "Unlocked by Default.",
+
+	"node": {
+		"direction": "north",
+		"parent": "mrcow"
+	}
+}

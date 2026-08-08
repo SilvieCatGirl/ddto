@@ -1,0 +1,18 @@
+{
+	"type": "monikaSkin",
+	"price": 250,
+	
+	"title": "Casual Monika (Long Hair)",
+	"description": "Chud",
+	"hint": "Unlocked by Default.",
+
+	"node": {
+		"direction": "east",
+		"parent": "monika-casual"
+	},
+	"color": [
+		140,
+		212,
+		101
+	]
+}

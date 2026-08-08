@@ -3,6 +3,7 @@ var bg:BGSprite;
 var fg:BGSprite;
 var clouds:FlxBackdrop;
 var fancyclouds:FlxBackdrop;
+var dokiBackdrop:FlxBackdrop;
 var windowlight:BGSprite;
 var lightontopofall:BGSprite;
 var popup:BGSprite;
@@ -37,15 +38,21 @@ function onLoad()
 						lightontopofall = new BGSprite('bigmonika/lights', -250, -167, 0.4, 0.6);
 						lightontopofall.blend = BlendMode.SCREEN;
 
+						dokiBackdrop = new FlxBackdrop(Paths.image('scrollingBG'));
+						dokiBackdrop.velocity.set(-40, -40);
+						dokiBackdrop.alpha = 0.001;
+						add(dokiBackdrop);
+
 					var fg:BGSprite = new BGSprite('bigmonika/FG', -328, -115);
 					add(fg);
 
 					popup = new FlxSprite(312, 432);
-					popup.frames = Paths.getSparrowAtlas('bigmonika/bigika_delete', true);
+					popup.frames = Paths.getSparrowAtlas('bigmonika/bigika_delete');
 					popup.animation.addByPrefix('idle', "PopUpAnim", 24, false);
 					popup.animation.play('idle', true);
 					popup.scrollFactor.set(1, 1);
 					popup.alpha = 0.001;
+					popup.zIndex = 999;
 					add(popup);
 }
 
@@ -61,7 +68,7 @@ function onBeatHit(){
 					case 1:
 						camZooming = true;
 					case 4:
-						FlxTween.tween(FlxG.camera, {zoom: 0.94}, 2.5, {
+						FlxTween.tween(FlxG.camera, {zoom: 0.94}, 0.95, {
 							ease: FlxEase.sineOut,
 							onComplete: function(tween:FlxTween)
 							{
@@ -69,7 +76,7 @@ function onBeatHit(){
 							}
 						});
 					case 72:
-						FlxTween.tween(FlxG.camera, {zoom: 0.8}, 2.5, {
+						FlxTween.tween(FlxG.camera, {zoom: 0.8}, 0.95, {
 							ease: FlxEase.sineOut,
 							onComplete: function(tween:FlxTween)
 							{
@@ -77,21 +84,24 @@ function onBeatHit(){
 							}
 						});
 					case 580:
-						FlxTween.tween(FlxG.camera, {zoom: 1}, 2.5, {
+						FlxTween.tween(FlxG.camera, {zoom: 1}, 0.95, {
 							ease: FlxEase.sineOut,
 							onComplete: function(tween:FlxTween)
 							{
 								defaultCamZoom = 1.1;
 							}
 						});
+					case 585:
+						FlxTween.tween(dokiBackdrop, {alpha: 1}, 0.95, {ease: FlxEase.sineIn});
 					case 648:
-						FlxTween.tween(FlxG.camera, {zoom: 0.9}, 2.5, {
+						FlxTween.tween(FlxG.camera, {zoom: 0.9}, 0.95, {
 							ease: FlxEase.sineOut,
 							onComplete: function(tween:FlxTween)
 							{
 								defaultCamZoom = 0.9;
 							}
 						});
+						FlxTween.tween(dokiBackdrop, {alpha: 0.001}, 0.475, {ease: FlxEase.sineOut});
 
 						popup.alpha = 1;
 						popup.animation.play('idle', true);

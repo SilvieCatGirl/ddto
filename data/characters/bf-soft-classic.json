@@ -159,7 +159,7 @@
 	"image": "characters/boyfriend/softie",
 	"position": [
 		-20,
-		-20
+		330
 	],
 	"healthicon": "bf-soft",
 	"flip_x": true,

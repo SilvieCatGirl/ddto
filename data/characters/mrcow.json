@@ -190,7 +190,7 @@
 	"image": "characters/boyfriend/Mr Cow",
 	"position": [
 		-75,
-		-30
+		320
 	],
 	"healthicon": "mrcow",
 	"flip_x": true,

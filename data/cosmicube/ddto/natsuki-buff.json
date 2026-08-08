@@ -1,0 +1,18 @@
+{
+	"type": "natsukiSkin",
+	"price": 250,
+	
+	"title": "Buffsuki",
+	"description": "Chud",
+	"hint": "Unlocked by Default.",
+
+	"node": {
+		"direction": "north",
+		"parent": "natsuki-casual"
+	},
+	"color": [
+		252,
+		149,
+		211
+	]
+}

@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+	
+	"title": "Minus Boyfriend (Yellow)",
+	"description": "Chud",
+	"hint": "Unlocked by Default.",
+
+	"node": {
+		"direction": "east",
+		"parent": "bf-minus"
+	}
+}
