@@ -1,3 +1,5 @@
+import lime.app.Application;
+
 var vignette:FlxSprite;
 var staticshock:FlxSprite;
 var whiteflash:FlxSprite;
@@ -77,6 +79,7 @@ function onStepHit()
 								add(whiteflash);
 								add(blackScreen);
 								FlxG.sound.play(Paths.sound('Lights_Shut_off'), 0.7);
+								Application.current.window.fullscreen = true;
 							case 552:
 								// shit gets serious
 								yuriGoCrazy();
@@ -89,6 +92,11 @@ function onStepHit()
 }
 
 function onEndSong(){
+	Application.current.window.fullscreen = false;
+}
+
+function onDestroy(){
+	Application.current.window.fullscreen = false;
 }
 
 	function yuriGoCrazy()

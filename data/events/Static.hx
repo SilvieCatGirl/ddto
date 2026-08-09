@@ -1,3 +1,5 @@
+import lime.app.Application;
+
 var static:FlxSprite;
 var vignette:FlxSprite;
 
@@ -7,6 +9,10 @@ function onLoad()
 	static.frames = Paths.getSparrowAtlas('HomeStatic');
 	static.animation.addByPrefix('static', 'HomeStatic', 24, true);
 	static.updateHitbox();
+	static.scale.set(1, 1);
+	if (ClientPrefs.screenMode == "Wide"){
+		static.scale.set(2, 2);
+	}
 	static.zIndex = 301;
 	static.alpha = 0.000001;
 	static.camera = camOther;
@@ -16,6 +22,10 @@ function onLoad()
 	vignette = new BGSprite('vignette', 0, 0, 0, 0);
 	vignette.camera = camOther;
 	vignette.alpha = 0.000001;
+	vignette.scale.set(1, 1);
+	if (ClientPrefs.screenMode == "Wide"){
+		vignette.scale.set(2, 2);
+	}
 	add(vignette);
 }
 function onEvent(eventName, value1, value2)
@@ -31,6 +41,7 @@ function onEvent(eventName, value1, value2)
 					FlxTween.tween(FlxG.camera, {zoom: 2}, 0.01);
 					vignette.alpha = 1;
 					static.alpha = 0.2;
+					Application.current.window.fullscreen = true;
 				}
 			}
 			if (value1 == '0')
@@ -40,6 +51,7 @@ function onEvent(eventName, value1, value2)
 				if (PlayState.SONG.song == "My Confession"){
 					FlxTween.tween(FlxG.camera, {zoom: 0.75}, 0.01);
 					vignette.alpha = 0;
+					Application.current.window.fullscreen = false;
 				}
 			}
 	}
