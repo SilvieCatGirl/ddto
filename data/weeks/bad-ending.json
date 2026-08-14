@@ -1,0 +1,51 @@
+{
+	"storyName": "yea",
+	"hideFreeplay": false,
+	"weekBackground": "yea",
+	"difficulties": "Normal",
+	"weekBefore": "",
+	"startUnlocked": true,
+	"section": "bad-ending",
+	"weekCharacters": [
+		"",
+		"bf",
+		""
+	],
+	"songs": [
+		[
+			"STAGNANT",
+			"sayorisad",
+			[
+				0,
+				0,
+				0
+			],
+			"bad-ending",
+			"MATT$"
+		],
+		[
+			"MARKOV",
+			"yuri-closet",
+			[
+				0,
+				0,
+				0
+			],
+			"bad-ending",
+			"MATT$"
+		],
+		[
+			"HOME",
+			"glitchnatsuki",
+			[
+				0,
+				0,
+				0
+			],
+			"bad-ending",
+			"TEAM TBD"
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "yea"
+}
