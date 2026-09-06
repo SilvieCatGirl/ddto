@@ -276,7 +276,7 @@ function onCreatePost()
 	grayShader.setAdjustColor(0, 0, 0, -100);
 }
 
-function onEvent(eventName, value1, value2)
+function onEvent(eventName, value1, value2, value3)
 {
 	{
 		switch (eventName)
@@ -323,26 +323,52 @@ function onEvent(eventName, value1, value2)
 				var val2:Float = Std.parseFloat(value2);
 				if (Math.isNaN(val2))
 					val2 = 0;
+				
+				//Considering all songs this should be shared
+				evilClubBG.visible = false;
+				evilClubBGScribbly.visible = false;
+				evilPoem.visible = false;
 
-						deskfront.visible = false;
-						evilSpace.visible = false;
-						clouds.visible = false;
-						fancyclouds.visible = false;
-						windowlight.visible = false;
-						clubroomdark.visible = false;
-						bgwindo.visible = false;
-						bgwindo2.visible = false;
+				switch (PlayState.SONG.stage)//per stage stuff
+				{
+					case 'home':
+						if (!ClientPrefs.lowQuality)
+						{
+							deskfront.visible = false;
+							evilSpace.visible = false;
+							clouds.visible = false;
+							fancyclouds.visible = false;
+							windowlight.visible = false;
+							clubroomdark.visible = false;
+							bgwindo.visible = false;
+							bgwindo2.visible = false;
+						}
 						stageStatic.visible = false;
 						ruinedClubBG.visible = false;
 						glitchfront.visible = false;
 						glitchback.visible = false;
 						closet.visible = false;
 						clubroom.visible = false;
-						evilPoem.visible = false;
 						inthenotepad.visible = false;
 						notepadoverlay.visible = false;
 						boyfriendGroup.x = BF_X;
 						boyfriendGroup.y = BF_Y;
+					case 'markov':
+						closetCloseUp.visible = false;
+						GameOverSubstate.markovGameover = false;
+					case 'stagnant':
+						if (!ClientPrefs.lowQuality)
+						{
+							deskfront.visible = false;
+							evilSpace.visible = false;
+							clouds.visible = false;
+							fancyclouds.visible = false;
+							windowlight.visible = false;
+							clubroomdark.visible = false;
+						}
+						closet.visible = false;
+						clubroom.visible = false;
+				}
 				
 				evilClubBGScribbly.alpha = 0.0001;
 
@@ -355,23 +381,20 @@ function onEvent(eventName, value1, value2)
 					case 'evil':
 						defaultCamZoom = 0.8;
 						FlxG.camera.zoom = 0.8;
+						if (!ClientPrefs.lowQuality)
+						{
 							evilSpace.visible = true;
 							clouds.visible = true;
 							fancyclouds.visible = true;
 							windowlight.visible = true;
 							clubroomdark.visible = true;
+						}
 						evilClubBG.visible = true;
 						evilClubBGScribbly.visible = true;
-						FlxTween.tween(boyfriend, {alpha: 1}, 0.0000001, {ease: FlxEase.circOut});
-						FlxTween.tween(gf, {alpha: 1}, 0.0000001, {ease: FlxEase.circOut});
-						FlxTween.tween(dad, {alpha: 1}, 0.0000001, {ease: FlxEase.circOut});
 					case 'poem':
 						defaultCamZoom = 0.9;
 						FlxG.camera.zoom = 0.9;
 						evilPoem.visible = true;
-						FlxTween.tween(boyfriend, {alpha: 1}, 0.0000001, {ease: FlxEase.circOut});
-						FlxTween.tween(gf, {alpha: 0}, 0.0000001, {ease: FlxEase.circOut});
-						FlxTween.tween(dad, {alpha: 1}, 0.0000001, {ease: FlxEase.circOut});
 					case 'markovpoem':
 						defaultCamZoom = 0.9;
 						FlxG.camera.zoom = 0.9;
@@ -380,19 +403,14 @@ function onEvent(eventName, value1, value2)
 						bloodyBG.animation.play('bgBlood');
 						screenPulse.alpha = 1;
 						funnyEyes.setGraphicSize(Std.int(bloodyBG.width * 1.3));
-						funnyEyes.cameras = [camOther];
+						funnyEyes.cameras = [camGame];
 						funnyEyes.alpha = 1;
 						GameOverSubstate.markovGameover = true;
-						FlxTween.tween(boyfriend, {alpha: 1}, 0.0000001, {ease: FlxEase.circOut});
-						FlxTween.tween(gf, {alpha: 0}, 0.0000001, {ease: FlxEase.circOut});
-						FlxTween.tween(dad, {alpha: 1}, 0.0000001, {ease: FlxEase.circOut});
 					case 'closet':
 						defaultCamZoom = 1.0;
 						FlxG.camera.zoom = 1.0;
 						closetCloseUp.visible = true;
 						GameOverSubstate.markovGameover = true;
-						FlxTween.tween(boyfriend, {alpha: 0}, 0.0000001, {ease: FlxEase.circOut});
-						FlxTween.tween(gf, {alpha: 0}, 0.0000001, {ease: FlxEase.circOut});
 					case 'ruined' | 'ruinedclub':
 						defaultCamZoom = 0.8;
 						FlxG.camera.zoom = 0.8;
@@ -405,9 +423,6 @@ function onEvent(eventName, value1, value2)
 						ruinedClubBG.visible = true;
 						glitchfront.visible = true;
 						glitchback.visible = true;
-						FlxTween.tween(boyfriend, {alpha: 1}, 0.0000001, {ease: FlxEase.circOut});
-						FlxTween.tween(gf, {alpha: 1}, 0.0000001, {ease: FlxEase.circOut});
-						FlxTween.tween(dad, {alpha: 1}, 0.0000001, {ease: FlxEase.circOut});
 					case 'notepad':
 						//fates are written, cause pandora didn't listen, time will march here with me, the screams of last you'll ever see
 						//I will kill you, I am marty the armidillou,the stinky smells won't deter me, I will drink all your pee
@@ -427,8 +442,6 @@ function onEvent(eventName, value1, value2)
 						camFollowPos.setPosition(650, 360);
 						boyfriendGroup.x = 430;
 						boyfriendGroup.y = -140;
-						FlxTween.tween(gf, {alpha: 0}, 0.0000001, {ease: FlxEase.circOut});
-						FlxTween.tween(dad, {alpha: 0}, 0.0000001, {ease: FlxEase.circOut});
 					case 'void':
 						defaultCamZoom = 0.9;
 						FlxG.camera.zoom = 0.9;
@@ -438,6 +451,7 @@ function onEvent(eventName, value1, value2)
 						FlxG.camera.zoom = 0.9;
 						stageStatic.visible = true;
 				}
+
 				if (val2 > 0)
 				{
 					FlxTween.tween(evilClubBGScribbly, {alpha: 1}, val2, {
@@ -447,8 +461,7 @@ function onEvent(eventName, value1, value2)
 							evilClubBGScribbly.alpha = 1;
 						}
 					});
-				}
-			case 'Glitch increase':
+				}			case 'Glitch increase':
 				switch (Std.parseFloat(value1))
 				{
 					case 1:
@@ -466,6 +479,48 @@ function onEvent(eventName, value1, value2)
 			case 'Stagnant Glitch':
 				stagstatic.dance();
 				stagstatic.alpha = 1;
+			case 'Character Visibility':
+				var charType:Int = 0;
+				var val2:Float = Std.parseFloat(value2);
+				var val3:Float = Std.parseFloat(value3);
+
+				if (Math.isNaN(val2))
+					val2 = 1;
+				else if (val2 == 0)
+					val2 = 0.0001;
+
+				if (Math.isNaN(val3) || val3 == 0)
+					val3 = 0.0001;
+
+				if (value2 == 'true')
+					val2 = 1;
+				else if (value2 == 'false')
+					val2 = 0.0001;
+				
+				trace(value1 + ' & ' + value2 + ' & ' + value3);
+				switch (value1)
+				{
+					case 'gf' | 'girlfriend':
+						charType = 2;
+					case 'dad' | 'opponent':
+						charType = 1;
+					default:
+						charType = Std.parseInt(value1);
+						if (Math.isNaN(charType)) charType = 0;
+				}
+
+				switch (charType)
+				{
+					case 0:
+						FlxTween.cancelTweensOf(boyfriend);
+						FlxTween.tween(boyfriend, {alpha: val2}, val3, {ease: FlxEase.circOut});
+					case 1:
+						FlxTween.cancelTweensOf(dad);
+						FlxTween.tween(dad, {alpha: val2}, val3, {ease: FlxEase.circOut});
+					case 2:
+						FlxTween.cancelTweensOf(gf);
+						FlxTween.tween(gf, {alpha: val2}, val3, {ease: FlxEase.circOut});
+				}
 			case 'Move Character':
 				var charType:Int = 0;
 				var val1:Float = Std.parseFloat(value1);
@@ -505,6 +560,10 @@ function onEvent(eventName, value1, value2)
 			case 'Move Opponent Tween':
 				var val1:Float = Std.parseFloat(value1);
 				var val2:Float = Std.parseFloat(value2);
+				var val3:Float = Std.parseFloat(value3);
+			
+				if (Math.isNaN(val3) || val3 == 0)
+					val3 = 0.0001;
 
 				if (Math.isNaN(val1))
 					val1 = DAD_X;
@@ -512,11 +571,15 @@ function onEvent(eventName, value1, value2)
 					val2 = DAD_Y;
 
 				FlxTween.cancelTweensOf(dadGroup);
-				FlxTween.tween(dadGroup, {x: val1, y: val2}, 0.10, {ease: FlxEase.circOut});
+				FlxTween.tween(dadGroup, {x: val1, y: val2}, val3, {ease: FlxEase.circOut});
 
 			case 'Move Boyfriend Tween':
 				var val1:Float = Std.parseFloat(value1);
 				var val2:Float = Std.parseFloat(value2);
+				var val3:Float = Std.parseFloat(value3);
+
+				if (Math.isNaN(val3) || val3 == 0)
+					val3 = 0.0001;
 
 				if (Math.isNaN(val1))
 					val1 = BF_X;
@@ -524,7 +587,7 @@ function onEvent(eventName, value1, value2)
 					val2 = BF_Y;
 
 				FlxTween.cancelTweensOf(boyfriendGroup);
-				FlxTween.tween(boyfriendGroup, {x: val1, y: val2}, 0.10, {ease: FlxEase.circOut});
+				FlxTween.tween(boyfriendGroup, {x: val1, y: val2}, val3, {ease: FlxEase.circOut});
 
 			case 'Change Camera Zoom':
 				var val1:Float = Std.parseFloat(value1);
@@ -652,7 +715,8 @@ function onEvent(eventName, value1, value2)
 			case 'Tint Character':
 				//Only used for home but might as well make it universal
 				var char:Character = boyfriend;
-				switch (value2.toLowerCase)
+				var val3:Int = FlxColor.fromString('#' + value3);
+				switch (value2.toLowerCase())
 				{
 					default:
 						char = boyfriend;
@@ -665,6 +729,9 @@ function onEvent(eventName, value1, value2)
 					case 'sayori':
 						char = extra1;
 				}
+
+				if (Math.isNaN(val3))
+					val3 = 0xFFFFFFFF;
 				
 				switch (value1.toLowerCase())
 				{
@@ -676,18 +743,20 @@ function onEvent(eventName, value1, value2)
 						char.color = FlxColor.GRAY;
 					case 'white' | 'default':
 						char.color = FlxColor.WHITE;
+					default:
+						char.color = val3;
 				}
-
 			case 'Eye Popup':
 				var val1:Float = Std.parseFloat(value1);
 				var val2:Float = Std.parseFloat(value2);
+				trace(value3);
 				var eye:FlxSprite = new FlxSprite(val1, val2);
-				eye.frames = Paths.getSparrowAtlas('MarkovEyes');
+				eye.frames = Paths.getSparrowAtlas('MarkovEyes', 'doki');
 				eye.animation.addByPrefix('idle', 'MarkovWindow', 24, false);
 				eye.animation.play('idle');
 				eye.antialiasing = ClientPrefs.globalAntialiasing;
 				eye.scrollFactor.set();
-				eye.cameras = [camOther];
+				eye.cameras = [camHUD];
 				add(eye);
 
 				// goku goes super saiyan
@@ -725,7 +794,17 @@ function onEvent(eventName, value1, value2)
 				if (Math.isNaN(val2) || val2 == 0)
 					val2 = 0.0001;
 
+				if (value3 == null || value3 == '')
 					FlxTween.tween(bakaOverlay, {alpha: val1}, val2, {ease: FlxEase.linear, onComplete: function(twn:FlxTween){}});
+
+				if (value3 != null && value3 != '')
+				{
+					bakaOverlay.animation.play('hueh');
+					new FlxTimer().start(4, function(tmr:FlxTimer)
+					{
+						bakaOverlay.alpha = 0;
+					});
+				}
 			case 'Play SFX':
 				var val2:Float = Std.parseFloat(value2);
 

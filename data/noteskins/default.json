@@ -6,7 +6,7 @@
 		"singRIGHT"
 	],
 	"splashesEnabled": true,
-	"noteTexture": "NOTE_assets",
+	"noteTexture": "ddto/NOTE_assets",
 	"receptorAnimations": [
 		[
 			{
@@ -409,7 +409,8 @@
 		{"r": -4063361, "g": -1, "b": -11893174},
 		{"r": -22289, "g": -1, "b": -4050304}
 	],
-	"splashTexture": "noteSplashes",
+	"splashTexture": "ddto/noteSplashes",
+    	"sustainSplashTexture": "ddto/sustainHold",
 	"noteSplashVariants": 2,
 	"antialiasing": true,
 	"inGameColoring": true,
