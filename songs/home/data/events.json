@@ -20,28 +20,26 @@
 						"dad",
 						"0",
 						"0"
-					],
+					]
+				]
+			],
+			[
+				1,
+				[
 					[
 						"Character Visibility",
 						"bf",
 						"0",
 						"0"
-					],
+					]
+				]
+			],
+			[
+				2,
+				[
 					[
 						"Character Visibility",
 						"gf",
-						"0",
-						"0"
-					],
-					[
-						"Strumline Visibility",
-						"dad",
-						"0",
-						"0"
-					],
-					[
-						"Strumline Visibility",
-						"bf",
 						"0",
 						"0"
 					]
@@ -201,22 +199,32 @@
 						"0"
 					],
 					[
+						"Glitch Effect",
+						"0.2",
+						"",
+						""
+					]
+				]
+			],
+			[
+				33601,
+				[
+					[
 						"Character Visibility",
 						"bf",
 						"0",
 						"0"
-					],
+					]
+				]
+			],
+			[
+				33602,
+				[
 					[
 						"Character Visibility",
 						"gf",
 						"0",
 						"0"
-					],
-					[
-						"Glitch Effect",
-						"0.2",
-						"",
-						""
 					]
 				]
 			],
@@ -338,18 +346,6 @@
 						"0"
 					],
 					[
-						"Character Visibility",
-						"bf",
-						"1",
-						"0"
-					],
-					[
-						"Character Visibility",
-						"gf",
-						"1",
-						"0"
-					],
-					[
 						"Glitch Effect",
 						"0.2",
 						"",
@@ -360,6 +356,28 @@
 						"0",
 						".1",
 						""
+					]
+				]
+			],
+			[
+				37201,
+				[
+					[
+						"Character Visibility",
+						"bf",
+						"1",
+						"0"
+					]
+				]
+			],
+			[
+				37202,
+				[
+					[
+						"Character Visibility",
+						"gf",
+						"1",
+						"0"
 					]
 				]
 			],
@@ -1422,12 +1440,6 @@
 						"0"
 					],
 					[
-						"Character Visibility",
-						"gf",
-						"0",
-						"0"
-					],
-					[
 						"Add/Remove Vignette",
 						"0.3",
 						"0",
@@ -1438,6 +1450,17 @@
 						"false",
 						"",
 						""
+					]
+				]
+			],
+			[
+				154801,
+				[
+					[
+						"Character Visibility",
+						"gf",
+						"0",
+						"0"
 					]
 				]
 			],
@@ -1474,12 +1497,6 @@
 						"0"
 					],
 					[
-						"Character Visibility",
-						"gf",
-						"1",
-						"0"
-					],
-					[
 						"Change Stagnant Stage",
 						"ruinedclub",
 						"",
@@ -1496,6 +1513,17 @@
 						"true",
 						"",
 						""
+					]
+				]
+			],
+			[
+				164401,
+				[
+					[
+						"Character Visibility",
+						"gf",
+						"1",
+						"0"
 					]
 				]
 			],
@@ -1599,6 +1627,17 @@
 						"0",
 						"0"
 					],
+					[
+						"Tint Character",
+						"gray",
+						"gf",
+						""
+					]
+				]
+			],
+			[
+				176476,
+				[
 					[
 						"Character Visibility",
 						"gf",

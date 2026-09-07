@@ -199,7 +199,7 @@ function onLoad()
 		add(daStatic);
 
 		redStatic = new BGSprite('ruinedclub/HomeStatic', 0, 0, 1, 1, ['HomeStatic'], true);
-		redStatic.cameras = [camOther];
+		redStatic.cameras = [camHUD];
 		redStatic.setGraphicSize(FlxG.width, FlxG.height);
 		redStatic.screenCenter();
 		redStatic.alpha = 0.0001;
@@ -274,6 +274,13 @@ function onLoad()
 function onCreatePost()
 {
 	grayShader.setAdjustColor(0, 0, 0, -100);
+	camOtherPreserve = camOther.filters;
+	camHUDPreserve = camHUD.filters;
+	camGamePreserve = camGame.filters;
+	if (ClientPrefs.shaders) {
+		camGame.filters = [grayFilter];
+		camHUD.filters = [grayFilter];
+	}
 }
 
 function onEvent(eventName, value1, value2, value3)
@@ -353,6 +360,10 @@ function onEvent(eventName, value1, value2, value3)
 						notepadoverlay.visible = false;
 						boyfriendGroup.x = BF_X;
 						boyfriendGroup.y = BF_Y;
+						if (ClientPrefs.shaders) {
+							camGame.filters = [];
+							camHUD.filters = [];
+						}
 					case 'markov':
 						closetCloseUp.visible = false;
 						GameOverSubstate.markovGameover = false;
@@ -437,9 +448,7 @@ function onEvent(eventName, value1, value2, value3)
 						}
 						inthenotepad.visible = true;
 						notepadoverlay.visible = true;
-						isCameraOnForcedPos = true;
-						camFollow.set(650, 360);
-						camFollowPos.setPosition(650, 360);
+						camSpecialThing([650, 360], [650, 360]);
 						boyfriendGroup.x = 430;
 						boyfriendGroup.y = -140;
 					case 'void':
@@ -501,25 +510,11 @@ function onEvent(eventName, value1, value2, value3)
 				switch (value1)
 				{
 					case 'gf' | 'girlfriend':
-						charType = 2;
-					case 'dad' | 'opponent':
-						charType = 1;
-					default:
-						charType = Std.parseInt(value1);
-						if (Math.isNaN(charType)) charType = 0;
-				}
-
-				switch (charType)
-				{
-					case 0:
-						FlxTween.cancelTweensOf(boyfriend);
-						FlxTween.tween(boyfriend, {alpha: val2}, val3, {ease: FlxEase.circOut});
-					case 1:
-						FlxTween.cancelTweensOf(dad);
-						FlxTween.tween(dad, {alpha: val2}, val3, {ease: FlxEase.circOut});
-					case 2:
-						FlxTween.cancelTweensOf(gf);
 						FlxTween.tween(gf, {alpha: val2}, val3, {ease: FlxEase.circOut});
+					case 'dad' | 'opponent':
+						FlxTween.tween(dad, {alpha: val2}, val3, {ease: FlxEase.circOut});
+					default:
+						FlxTween.tween(boyfriend, {alpha: val2}, val3, {ease: FlxEase.circOut});
 				}
 			case 'Move Character':
 				var charType:Int = 0;
@@ -570,7 +565,7 @@ function onEvent(eventName, value1, value2, value3)
 				if (Math.isNaN(val2))
 					val2 = DAD_Y;
 
-				FlxTween.cancelTweensOf(dadGroup);
+				trace(value1 + ' & ' + value2 + ' & ' + value3);
 				FlxTween.tween(dadGroup, {x: val1, y: val2}, val3, {ease: FlxEase.circOut});
 
 			case 'Move Boyfriend Tween':
@@ -661,6 +656,7 @@ function onEvent(eventName, value1, value2, value3)
 					val2 = 0.0001;
 				forcecamZooming = false;
 				camZooming = false;
+				redStatic.cameras = [camOther];
 				FlxTween.tween(imdead, {alpha: val1}, val2, {ease: FlxEase.linear, onComplete: function(twn:FlxTween){}});
 				FlxTween.tween(cambgwindo, {alpha: val1}, val2, {ease: FlxEase.linear, onComplete: function(twn:FlxTween){}});
 				FlxTween.tween(cambgwindo2, {alpha: val1}, val2, {ease: FlxEase.linear, onComplete: function(twn:FlxTween){}});
@@ -806,12 +802,7 @@ function onEvent(eventName, value1, value2, value3)
 					});
 				}
 			case 'Play SFX':
-				var val2:Float = Std.parseFloat(value2);
-
-				if (Math.isNaN(val2))
-					val2 = 1;
-
-				FlxG.sound.play(Paths.sound(value1), val2);
+				FlxG.sound.play(Paths.sound(value1), 1);
 			case 'Markov note spawns blood':
 				switch (value1.toLowerCase())
 				{
@@ -889,4 +880,16 @@ function onStepHit(){
 							bakaOverlay.alpha = 0;
 						});
 				}
+}
+
+function opponentNoteHitPre(note)
+{
+	if (note.noteType == 'Sayo Sing')
+	{
+		note.owner = extra1;
+	}
+	if (note.noteType == 'Yuri Sing')
+	{
+		note.owner = extra2;
+	}
 }
