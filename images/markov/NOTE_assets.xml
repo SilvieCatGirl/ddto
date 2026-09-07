@@ -1,85 +1,93 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="NOTE_assets.png">
-	<!-- Created with Adobe Animate version 24.0.12.3 -->
+<TextureAtlas imagePath="MARKOVNOTE_assets.png">
+	<!-- Created with Adobe Animate version 18.0.2.126 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="down note0000" x="5" y="5" width="172" height="154"/>
-	<SubTexture name="down note0001" x="5" y="5" width="172" height="154"/>
-	<SubTexture name="down note0002" x="5" y="5" width="172" height="154"/>
-	<SubTexture name="down note0003" x="5" y="5" width="172" height="154"/>
-	<SubTexture name="down note0004" x="5" y="5" width="172" height="154"/>
-	<SubTexture name="down note0005" x="5" y="5" width="172" height="154"/>
-	<SubTexture name="down note0006" x="5" y="5" width="172" height="154"/>
-	<SubTexture name="down note0007" x="5" y="5" width="172" height="154"/>
-	<SubTexture name="down note0008" x="182" y="5" width="172" height="154"/>
-	<SubTexture name="down note0009" x="359" y="5" width="172" height="154"/>
-	<SubTexture name="down note0010" x="359" y="5" width="172" height="154"/>
-	<SubTexture name="down note0011" x="359" y="5" width="172" height="154"/>
-	<SubTexture name="down note0012" x="359" y="5" width="172" height="154"/>
-	<SubTexture name="down note0013" x="536" y="5" width="172" height="154"/>
-	<SubTexture name="down note0014" x="713" y="5" width="172" height="154"/>
-	<SubTexture name="down note0015" x="5" y="164" width="172" height="154"/>
-	<SubTexture name="down note0016" x="5" y="164" width="172" height="154"/>
-	<SubTexture name="down note0017" x="5" y="164" width="172" height="154"/>
-	<SubTexture name="down note0018" x="5" y="164" width="172" height="154"/>
+	<SubTexture name="down note0000" x="0" y="0" width="172" height="154"/>
+	<SubTexture name="down note0001" x="0" y="0" width="172" height="154"/>
+	<SubTexture name="down note0002" x="0" y="0" width="172" height="154"/>
+	<SubTexture name="down note0003" x="0" y="0" width="172" height="154"/>
+	<SubTexture name="down note0004" x="0" y="0" width="172" height="154"/>
+	<SubTexture name="down note0005" x="0" y="0" width="172" height="154"/>
+	<SubTexture name="down note0006" x="0" y="0" width="172" height="154"/>
+	<SubTexture name="down note0007" x="0" y="0" width="172" height="154"/>
+	<SubTexture name="down note0008" x="182" y="0" width="172" height="154"/>
+	<SubTexture name="down note0009" x="364" y="0" width="172" height="154"/>
+	<SubTexture name="down note0010" x="364" y="0" width="172" height="154"/>
+	<SubTexture name="down note0011" x="364" y="0" width="172" height="154"/>
+	<SubTexture name="down note0012" x="364" y="0" width="172" height="154"/>
+	<SubTexture name="down note0013" x="546" y="0" width="172" height="154"/>
+	<SubTexture name="down note0014" x="728" y="0" width="172" height="154"/>
+	<SubTexture name="down note0015" x="0" y="164" width="172" height="154"/>
+	<SubTexture name="down note0016" x="0" y="164" width="172" height="154"/>
+	<SubTexture name="down note0017" x="0" y="164" width="172" height="154"/>
+	<SubTexture name="down note0018" x="0" y="164" width="172" height="154"/>
 	<SubTexture name="down note0019" x="182" y="164" width="172" height="154"/>
-	<SubTexture name="up note0000" x="359" y="164" width="172" height="155"/>
-	<SubTexture name="up note0001" x="359" y="164" width="172" height="155"/>
-	<SubTexture name="up note0002" x="359" y="164" width="172" height="155"/>
-	<SubTexture name="up note0003" x="359" y="164" width="172" height="155"/>
-	<SubTexture name="up note0004" x="359" y="164" width="172" height="155"/>
-	<SubTexture name="up note0005" x="359" y="164" width="172" height="155"/>
-	<SubTexture name="up note0006" x="359" y="164" width="172" height="155"/>
-	<SubTexture name="up note0007" x="359" y="164" width="172" height="155"/>
-	<SubTexture name="up note0008" x="536" y="164" width="172" height="154" frameX="0" frameY="-1" frameWidth="172" frameHeight="155"/>
-	<SubTexture name="up note0009" x="713" y="164" width="172" height="154" frameX="0" frameY="-1" frameWidth="172" frameHeight="155"/>
-	<SubTexture name="up note0010" x="713" y="164" width="172" height="154" frameX="0" frameY="-1" frameWidth="172" frameHeight="155"/>
-	<SubTexture name="up note0011" x="713" y="164" width="172" height="154" frameX="0" frameY="-1" frameWidth="172" frameHeight="155"/>
-	<SubTexture name="up note0012" x="713" y="164" width="172" height="154" frameX="0" frameY="-1" frameWidth="172" frameHeight="155"/>
-	<SubTexture name="up note0013" x="5" y="324" width="172" height="154" frameX="0" frameY="-1" frameWidth="172" frameHeight="155"/>
-	<SubTexture name="up note0014" x="182" y="324" width="172" height="154" frameX="0" frameY="-1" frameWidth="172" frameHeight="155"/>
-	<SubTexture name="up note0015" x="359" y="324" width="172" height="154" frameX="0" frameY="-1" frameWidth="172" frameHeight="155"/>
-	<SubTexture name="up note0016" x="359" y="324" width="172" height="154" frameX="0" frameY="-1" frameWidth="172" frameHeight="155"/>
-	<SubTexture name="up note0017" x="359" y="324" width="172" height="154" frameX="0" frameY="-1" frameWidth="172" frameHeight="155"/>
-	<SubTexture name="up note0018" x="359" y="324" width="172" height="154" frameX="0" frameY="-1" frameWidth="172" frameHeight="155"/>
-	<SubTexture name="up note0019" x="536" y="324" width="172" height="154" frameX="0" frameY="-1" frameWidth="172" frameHeight="155"/>
-	<SubTexture name="left note0000" x="713" y="324" width="172" height="157"/>
-	<SubTexture name="left note0001" x="713" y="324" width="172" height="157"/>
-	<SubTexture name="left note0002" x="713" y="324" width="172" height="157"/>
-	<SubTexture name="left note0003" x="713" y="324" width="172" height="157"/>
-	<SubTexture name="left note0004" x="713" y="324" width="172" height="157"/>
-	<SubTexture name="left note0005" x="713" y="324" width="172" height="157"/>
-	<SubTexture name="left note0006" x="713" y="324" width="172" height="157"/>
-	<SubTexture name="left note0007" x="713" y="324" width="172" height="157"/>
-	<SubTexture name="left note0008" x="5" y="486" width="172" height="157"/>
-	<SubTexture name="left note0009" x="182" y="486" width="172" height="157"/>
-	<SubTexture name="left note0010" x="182" y="486" width="172" height="157"/>
-	<SubTexture name="left note0011" x="182" y="486" width="172" height="157"/>
-	<SubTexture name="left note0012" x="182" y="486" width="172" height="157"/>
-	<SubTexture name="left note0013" x="359" y="486" width="172" height="157"/>
-	<SubTexture name="left note0014" x="536" y="486" width="172" height="157"/>
-	<SubTexture name="left note0015" x="713" y="486" width="172" height="157"/>
-	<SubTexture name="left note0016" x="713" y="486" width="172" height="157"/>
-	<SubTexture name="left note0017" x="713" y="486" width="172" height="157"/>
-	<SubTexture name="left note0018" x="713" y="486" width="172" height="157"/>
-	<SubTexture name="left note0019" x="5" y="648" width="172" height="157"/>
-	<SubTexture name="right note0000" x="182" y="648" width="172" height="157"/>
-	<SubTexture name="right note0001" x="182" y="648" width="172" height="157"/>
-	<SubTexture name="right note0002" x="182" y="648" width="172" height="157"/>
-	<SubTexture name="right note0003" x="182" y="648" width="172" height="157"/>
-	<SubTexture name="right note0004" x="182" y="648" width="172" height="157"/>
-	<SubTexture name="right note0005" x="182" y="648" width="172" height="157"/>
-	<SubTexture name="right note0006" x="182" y="648" width="172" height="157"/>
-	<SubTexture name="right note0007" x="182" y="648" width="172" height="157"/>
-	<SubTexture name="right note0008" x="359" y="648" width="172" height="157"/>
-	<SubTexture name="right note0009" x="536" y="648" width="172" height="157"/>
-	<SubTexture name="right note0010" x="536" y="648" width="172" height="157"/>
-	<SubTexture name="right note0011" x="536" y="648" width="172" height="157"/>
-	<SubTexture name="right note0012" x="536" y="648" width="172" height="157"/>
-	<SubTexture name="right note0013" x="713" y="648" width="172" height="157"/>
-	<SubTexture name="right note0014" x="5" y="810" width="172" height="157"/>
-	<SubTexture name="right note0015" x="182" y="810" width="172" height="157"/>
-	<SubTexture name="right note0016" x="182" y="810" width="172" height="157"/>
-	<SubTexture name="right note0017" x="182" y="810" width="172" height="157"/>
-	<SubTexture name="right note0018" x="182" y="810" width="172" height="157"/>
-	<SubTexture name="right note0019" x="359" y="810" width="172" height="157"/>
+	<SubTexture name="down hold tail0000" x="364" y="164" width="50" height="64"/>
+	<SubTexture name="down hold piece0000" x="424" y="164" width="50" height="44"/>
+	<SubTexture name="up note0000" x="484" y="164" width="172" height="155"/>
+	<SubTexture name="up note0001" x="484" y="164" width="172" height="155"/>
+	<SubTexture name="up note0002" x="484" y="164" width="172" height="155"/>
+	<SubTexture name="up note0003" x="484" y="164" width="172" height="155"/>
+	<SubTexture name="up note0004" x="484" y="164" width="172" height="155"/>
+	<SubTexture name="up note0005" x="484" y="164" width="172" height="155"/>
+	<SubTexture name="up note0006" x="484" y="164" width="172" height="155"/>
+	<SubTexture name="up note0007" x="484" y="164" width="172" height="155"/>
+	<SubTexture name="up note0008" x="666" y="164" width="172" height="154" frameX="0" frameY="-1" frameWidth="172" frameHeight="155"/>
+	<SubTexture name="up note0009" x="848" y="164" width="172" height="154" frameX="0" frameY="-1" frameWidth="172" frameHeight="155"/>
+	<SubTexture name="up note0010" x="848" y="164" width="172" height="154" frameX="0" frameY="-1" frameWidth="172" frameHeight="155"/>
+	<SubTexture name="up note0011" x="848" y="164" width="172" height="154" frameX="0" frameY="-1" frameWidth="172" frameHeight="155"/>
+	<SubTexture name="up note0012" x="848" y="164" width="172" height="154" frameX="0" frameY="-1" frameWidth="172" frameHeight="155"/>
+	<SubTexture name="up note0013" x="0" y="329" width="172" height="154" frameX="0" frameY="-1" frameWidth="172" frameHeight="155"/>
+	<SubTexture name="up note0014" x="182" y="329" width="172" height="154" frameX="0" frameY="-1" frameWidth="172" frameHeight="155"/>
+	<SubTexture name="up note0015" x="364" y="329" width="172" height="154" frameX="0" frameY="-1" frameWidth="172" frameHeight="155"/>
+	<SubTexture name="up note0016" x="364" y="329" width="172" height="154" frameX="0" frameY="-1" frameWidth="172" frameHeight="155"/>
+	<SubTexture name="up note0017" x="364" y="329" width="172" height="154" frameX="0" frameY="-1" frameWidth="172" frameHeight="155"/>
+	<SubTexture name="up note0018" x="364" y="329" width="172" height="154" frameX="0" frameY="-1" frameWidth="172" frameHeight="155"/>
+	<SubTexture name="up note0019" x="546" y="329" width="172" height="154" frameX="0" frameY="-1" frameWidth="172" frameHeight="155"/>
+	<SubTexture name="up hold tail0000" x="728" y="329" width="50" height="64"/>
+	<SubTexture name="up hold piece0000" x="788" y="329" width="50" height="44"/>
+	<SubTexture name="left hold tail0000" x="728" y="329" width="50" height="64"/>
+	<SubTexture name="left note0000" x="848" y="329" width="172" height="157"/>
+	<SubTexture name="left note0001" x="848" y="329" width="172" height="157"/>
+	<SubTexture name="left note0002" x="848" y="329" width="172" height="157"/>
+	<SubTexture name="left note0003" x="848" y="329" width="172" height="157"/>
+	<SubTexture name="left note0004" x="848" y="329" width="172" height="157"/>
+	<SubTexture name="left note0005" x="848" y="329" width="172" height="157"/>
+	<SubTexture name="left note0006" x="848" y="329" width="172" height="157"/>
+	<SubTexture name="left note0007" x="848" y="329" width="172" height="157"/>
+	<SubTexture name="left note0008" x="0" y="496" width="172" height="157"/>
+	<SubTexture name="left note0009" x="182" y="496" width="172" height="157"/>
+	<SubTexture name="left note0010" x="182" y="496" width="172" height="157"/>
+	<SubTexture name="left note0011" x="182" y="496" width="172" height="157"/>
+	<SubTexture name="left note0012" x="182" y="496" width="172" height="157"/>
+	<SubTexture name="left note0013" x="364" y="496" width="172" height="157"/>
+	<SubTexture name="left note0014" x="546" y="496" width="172" height="157"/>
+	<SubTexture name="left note0015" x="728" y="496" width="172" height="157"/>
+	<SubTexture name="left note0016" x="728" y="496" width="172" height="157"/>
+	<SubTexture name="left note0017" x="728" y="496" width="172" height="157"/>
+	<SubTexture name="left note0018" x="728" y="496" width="172" height="157"/>
+	<SubTexture name="left note0019" x="0" y="663" width="172" height="157"/>
+	<SubTexture name="left hold piece0000" x="182" y="663" width="50" height="44"/>
+	<SubTexture name="right note0000" x="242" y="663" width="172" height="157"/>
+	<SubTexture name="right note0001" x="242" y="663" width="172" height="157"/>
+	<SubTexture name="right note0002" x="242" y="663" width="172" height="157"/>
+	<SubTexture name="right note0003" x="242" y="663" width="172" height="157"/>
+	<SubTexture name="right note0004" x="242" y="663" width="172" height="157"/>
+	<SubTexture name="right note0005" x="242" y="663" width="172" height="157"/>
+	<SubTexture name="right note0006" x="242" y="663" width="172" height="157"/>
+	<SubTexture name="right note0007" x="242" y="663" width="172" height="157"/>
+	<SubTexture name="right note0008" x="424" y="663" width="172" height="157"/>
+	<SubTexture name="right note0009" x="606" y="663" width="172" height="157"/>
+	<SubTexture name="right note0010" x="606" y="663" width="172" height="157"/>
+	<SubTexture name="right note0011" x="606" y="663" width="172" height="157"/>
+	<SubTexture name="right note0012" x="606" y="663" width="172" height="157"/>
+	<SubTexture name="right note0013" x="788" y="663" width="172" height="157"/>
+	<SubTexture name="right note0014" x="0" y="830" width="172" height="157"/>
+	<SubTexture name="right note0015" x="182" y="830" width="172" height="157"/>
+	<SubTexture name="right note0016" x="182" y="830" width="172" height="157"/>
+	<SubTexture name="right note0017" x="182" y="830" width="172" height="157"/>
+	<SubTexture name="right note0018" x="182" y="830" width="172" height="157"/>
+	<SubTexture name="right note0019" x="364" y="830" width="172" height="157"/>
+	<SubTexture name="right hold tail0000" x="728" y="329" width="50" height="64"/>
+	<SubTexture name="right hold piece0000" x="788" y="329" width="50" height="44"/>
 </TextureAtlas>
